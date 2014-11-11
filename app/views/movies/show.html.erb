@@ -5,6 +5,8 @@
   <h3>
     <%= @movie.title %>
     (<%= @movie.release_year %>)
+    <%=link_to @movie.imdb do%>
+      <%=image_tag asset_path("")%>
     <%end%>
   </h3>
   <p class="label movie-label radius mb1">$ <%= @movie.price %></p>
