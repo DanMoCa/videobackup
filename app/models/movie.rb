@@ -1,6 +1,6 @@
 class Movie < ActiveRecord::Base
   def poster
-    "http://ia.media-imdb.com/images/M/#{poster_url}"
+    "http://s28.postimg.org/#{poster_url}"
   end
 
   def imdb

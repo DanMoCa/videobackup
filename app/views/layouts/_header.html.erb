@@ -5,7 +5,7 @@
       <li class="name">
         <h1>
           <a href="/">
-            <i class="fi-play-video"></i> MovieStore
+            <i class=""></i> Calonise Pizza
           </a>
         </h1>
       </li>
@@ -19,14 +19,14 @@
         <%if signed_in?%>
           <li>
             <%= link_to cart_path do%>
-              <i class="fi-shopping-cart"></i> My Cart (<span class="cart-count"><%=current_user.cart_count%></span>)
+              <i class="fi-shopping-cart"></i> Mi Orden (<span class="cart-count"><%=current_user.cart_count%></span>)
             <%end%>
           </li>
           <li><%=link_to current_user.email, edit_user_registration_path%></li>
-          <li><%=link_to "Logout", destroy_user_session_path, method: :delete%></li>
+        <li><%=link_to "Conectarse", destroy_user_session_path, method: :delete%></li>
         <%else%>
-          <li><%=link_to "Register", new_user_registration_path%></li>
-          <li><%=link_to "Login", new_user_session_path%></li>
+        <li><%=link_to "Registrarse", new_user_registration_path%></li>
+        <li><%=link_to "Conectarse", new_user_session_path%></li>
         <%end%>
       </ul>
 
@@ -35,10 +35,10 @@
         <li class="has-form">
           <div class="row collapse">
             <div class="large-8 small-9 columns">
-              <input type="text" class="radius-ls expand" placeholder="Find Movie">
+              <input type="text" class="radius-ls expand" placeholder="Buscar Platillo">
             </div>
             <div class="large-4 small-3 columns">
-              <a href="#" class=" radius-rs button">Search</a>
+              <a href="#" class=" radius-rs button">Buscar</a>
             </div>
           </div>
         </li>

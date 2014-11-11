@@ -1,4 +1,4 @@
-<h4 class="column">Featured Movies</h4>
+<h4 class="column">Platillos</h4>
 <div class="column">
   <ul class="movies-grid no-bullet row">
     <% @movies.each do |movie| %>
@@ -9,11 +9,10 @@
           <% end %>
           <div class="movie-info ell glassy-bg padmy padlx">
             <div class="title">
-              <h6><%= movie.title %> <span>(<%= movie.release_year %>)</span></h6>
+              <h6><%= movie.title %></h6>
             </div>
             <p class="left price label movie-label radius">$ <%= movie.price %></p>
             <%= link_to movie.imdb, class: "right" do %>
-              <%= image_tag asset_path("imdb_logo.png") %>
             <% end %>
           </div>
         </div>
